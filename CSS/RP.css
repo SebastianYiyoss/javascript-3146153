@@ -1,0 +1,54 @@
+.sec{
+    width: 100%;
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+.imag{
+    width: 35%;
+    overflow: hidden;
+    border: solid .3vh;
+    border-radius: 1.5vh;
+    transition: ease .3s;
+    height: 40vh;
+}
+#imag{
+    width: 100%;
+    transition: ease .3s;
+}
+.BN{
+    filter: grayscale(100%);
+    transition: ease .3s;
+}
+.Blur{
+    filter: blur(1vh);
+    transition: ease .3s;
+}
+.Rot_Scl{
+    transform: scale(105%) rotate(2deg);
+    transition: ease .3s;
+}
+.butt{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+#b1, #b2, #b3{
+    padding: 1vh;
+    width: 30%;
+    background-color: white;
+    border: solid .3vh;
+    border-radius: 1.5vh;
+    font-family: sans-serif;
+    transition: ease .3s;
+}
+.change{
+    color: black;
+    transform: scale(105%);
+    color: white;
+    box-shadow: inset 0 0 5vh 5vh rgb(0, 0, 0);
+    transition: ease .3s;
+}
