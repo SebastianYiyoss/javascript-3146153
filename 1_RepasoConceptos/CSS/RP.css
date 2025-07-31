@@ -1,0 +1,125 @@
+.sec{
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 20vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vh;
+}
+.imag{
+    width: 35%;
+    transition: ease .3s;
+    height: 40vh;
+}
+.imag:hover h1{
+    display: block;
+    transition: ease .3s;
+}
+.imag h1{
+    font-family: sans-serif;
+    font-size: 3vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    top: -40vh;
+    display: none;
+    transition: ease .3s;
+}
+#imag{
+    width: 100%;
+    transition: ease .3s;
+    border-radius: 1.5vh;
+    border: solid .3vh;
+}
+.BN{
+    filter: grayscale(100%);
+    transition: ease .3s;
+}
+.Blur{
+    filter: blur(1vh);
+    transition: ease .3s;
+}
+.Rot_Scl{
+    transform: scale(105%) rotate(2deg);
+    transition: ease .3s;
+}
+.butt{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+#b1:hover .imag-icon1{
+    display: block;
+    transition: ease .3s;
+}
+#b2:hover .imag-icon2{
+    display: block;
+    transition: ease .3s;
+}
+#b3:hover .imag-icon3{
+    display: block;
+    transition: ease .3s;
+}
+.imag-icon1{
+    display: none;
+    width: 20%;
+    animation: iconOne infinite 1s ease;
+}
+@keyframes iconOne{
+    50%{
+        transform: scaleX(-1);
+    }
+}
+.imag-icon2{
+    display: none;
+    width: 20%;
+    animation: iconTwo infinite 1s ease;
+}
+@keyframes iconTwo{
+    50%{
+        filter: blur(.5vh);
+    }
+}
+.imag-icon3{
+    display: none;
+    width: 20%;
+    animation: iconThree infinite 1s ease;
+}
+@keyframes iconThree{
+    50%{
+        transform: rotate(180deg) scale(80%);
+    }
+}
+#b1, #b2, #b3{
+    padding: 1vh;
+    display: flex;
+    height: max-content;
+    gap: 2vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: white;
+    border: solid .3vh;
+    border-radius: 1.5vh;
+    font-family: sans-serif;
+    transition: ease .3s;
+}
+#b1:hover, #b2:hover, #b3:hover{
+    background-color: rgb(232, 232, 232);
+}
+.change{
+    color: black;
+    transform: scale(105%);
+    box-shadow: 0 0 1vh .1vh rgb(103, 103, 103);
+    transition: ease .3s;
+}
+#text{
+    position: absolute;
+    text-align: center;
+    width: 35%;
+    top: -10vh;
+    font-family: sans-serif;
+    font-size: 3vh;
+}
