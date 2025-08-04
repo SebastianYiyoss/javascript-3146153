@@ -9,6 +9,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .fondo{
     background-image: url(./assets/Fondo.png);
@@ -18,24 +19,26 @@ section{
     height: 80vh;
     border-radius: 2vh;
 }
-#bloque5und{
+.bloque5und{
     position: absolute;
     top: 48%;
     left: 30%;
 }
-#monedaOne{
+.monedaOne{
     position: absolute;
-    cursor: pointer;
     top: 39%;
     left: 37.7%;
+    transition: ease .5s;
+    animation: ease-out infinite 1.5s coin;
 }
-#monedaTwo{
+.monedaTwo{
     position: absolute;
-    cursor: pointer;
     top: 39%;
     left: 33%;
+    transition: ease .5s;
+    animation: ease-in infinite 1.5s coin;
 }
-#bloque3und{
+.bloque3und{
     position: absolute;
     top: 35%;
     right: 38%;
@@ -45,10 +48,58 @@ section{
     cursor: pointer;
     top: 26%;
     right: 41.3%;
+    animation: ease-out infinite 1s crz;
 }
-#monedaThree{
+.monedaThree{
     position: absolute;
-    cursor: pointer;
     right: 22.75%;
     top: 53%;
+    transition: ease .5s;
+    animation: ease-in infinite 1.5s coin;
+}
+.cursor{
+    cursor: pointer;
+}
+.contenedorDD{
+    width: 25%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.estak{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(85, 79, 79, 0.39);
+    padding: 1vh 2vh 1vh 2vh;
+    gap: 2vh;
+    border-radius: 1vh;
+    font-family: sans-serif;
+}
+.estak img{
+    width: 4vh;
+    height: 4vh;
+}
+.contadorC{
+    color: rgb(255, 255, 255);
+}
+.contadorM{
+    color: rgb(255, 255, 72);
+}
+
+.recoger{
+    animation: ease-in-out recoger .5s forwards;
+}
+
+@keyframes recoger{
+    0%{transform: translateY(0); opacity: 1;}
+    30%{transform: translateY(-5vh) scaleX(-1);}
+    100%{transform: translateY(0); opacity: 0;}
+}
+
+@keyframes coin {
+    50%{
+        transform: translateY(-2vh);
+    }
 }
