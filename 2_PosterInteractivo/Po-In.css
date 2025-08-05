@@ -23,6 +23,18 @@ section{
     position: absolute;
     top: 48%;
     left: 30%;
+    animation: infinite bloque1 ease 3s;
+}
+@keyframes bloque1{
+    25%{
+        transform: translateX(-5vh);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(5vh);
+    }
 }
 .monedaOne{
     position: absolute;
@@ -42,13 +54,25 @@ section{
     position: absolute;
     top: 35%;
     right: 38%;
+    animation: infinite bloque2 ease 3s;
 }
-#corazon{
+@keyframes bloque2{
+    25%{
+        transform: translateX(5vh);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-5vh);
+    }
+}
+.corazon{
     position: absolute;
     cursor: pointer;
     top: 26%;
     right: 41.3%;
-    animation: ease-out infinite 1s crz;
+    animation: palpitar infinite ease-in-out 1s;
 }
 .monedaThree{
     position: absolute;
@@ -101,5 +125,26 @@ section{
 @keyframes coin {
     50%{
         transform: translateY(-2vh);
+    }
+}
+
+.corazon2{
+    animation: ease-in-out cora .5s forwards;
+}
+@keyframes cora{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+        transform: scale(120%) translateY(-5vh);
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes palpitar{
+    50%{
+        scale: 105%;
     }
 }
