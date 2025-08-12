@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./multimedia/favi.png">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>TBOI</title>
+</head>
+<body>
+
+    <audio id="ost" src="./audios/ost.mp3" loop autoplay></audio>
+    <audio id="ost2" src="./audios/ost2.mp3" loop autoplay></audio>
+    <audio id="ostGame" src="./audios/ostGame.mp3" loop autoplay></audio>
+
+
+    <section class="all">
+        <div class="escenario1" id="ES1">
+            <img class="escot1" src="./multimedia/EscotillaCerrada.png" alt="">
+            <img class="escot2 hiddenScot" src="./multimedia/EscotillaAbierta.png" alt="">
+            <div class="abs isaacData">
+                <img class="corazon corazonMove1" src="./multimedia/CorazónLleno.png" alt="">
+                <img class="isaac" src="./multimedia/Isaac.png" alt="">
+            </div>
+            <img class="abs pedestal" src="./multimedia/Pedestal.png" alt="">
+            <img class="abs item itemMove" src="./multimedia/item.png" alt="">
+            <img class="abs monedaOne cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaTwo cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaThree cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <div class="abs monedasData">
+                <h2>Monedas ×</h2>
+                <h2 id="contador">0</h2>
+                <h2 class="recoge">Recoge 10 monedas para salir</h2>
+            </div>
+            <div class="abs itemData">
+                <img src="./multimedia/20  20.png" alt="" class="veinteVeinte">
+            </div>
+            <div class="puerta" id="puerta"></div>
+        </div>
+
+
+        <div class="escenario2 hidden2" id="ES2">
+            <img class="abs monedaFour cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaFive cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaSix cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaSeven cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaEigth cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaNine cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <img class="abs monedaTeen cursorM" id="monedas" src="./multimedia/Moneda.jpg" alt="">
+            <div class="abs monedasData">
+                <h2>Monedas ×</h2>
+                <h2 id="contador2">0</h2>
+                <h2 class="recoge2">Recoge 10 monedas para salir</h2>
+            </div>
+            <div class="abs isaacData2">
+                <img class="corazon2 corazonMove1" src="./multimedia/CorazónLleno.png" alt="">
+                <img class="isaac2" src="./multimedia/Isaac.png" alt="">
+            </div>
+            <img class="abs enemigo cursorEN" src="./multimedia/Pinchos.png" alt="">
+            <img class="abs enemigo2 ENdisable cursorEN" src="./multimedia/Pinchos.png" alt="">
+            <div class="puerta2" id="puerta2"></div>
+
+            <img src="./multimedia/bolaDpapel.png" alt="" class="bola" id="bola">
+        </div>
+
+
+        <div class="escenario3 hidden3">
+            <img src="./multimedia/isaacMuerto.png" alt="" class="isaacM cursorIM">
+            <h3 class="hablar hablarHidden">¿Por qué?</h3>
+        </div>
+
+
+        <div class="gano gano2">
+            <h1>¡Felicidades!</h1>
+            <h2 class="repetir">De nuevo</h2>
+        </div>
+
+
+        <section class="noP hiddenP"> 
+            <div class="hiddenhoja otroJuego" id="otroJuego">
+                <img src="./multimedia/moneda3.png" alt="" class="monedaFeliz">
+                <h2 class="equis">×</h2>
+                <p class="monedaText">Al fin me desarrugas...</p>
+                <h2 class="seguir"><strong>⇾</strong></h2>
+                <a href="../MiniCoin/index.html" class="jugar hiddenhoja">Jugar</a>
+            </div>
+        </section>
+
+    </section>
+    
+    <script src="./javaS.js"></script>
+
+</body>
+</html>

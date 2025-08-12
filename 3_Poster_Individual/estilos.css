@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.all{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.escenario1{
+    position: absolute;
+    background-image: url(./multimedia/Home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    overflow: hidden;
+    transition: ease 1s;
+}
+.escenario2{
+    position: absolute;
+    background-image: url(./multimedia/HomeTwo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    transition: ease 1s;
+}
+.abs{
+    position: absolute;
+}
+.hidden1{
+    position: absolute;
+    background-image: url(./multimedia/Home.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -100%;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    overflow: hidden;
+    transition: ease 1s;
+    opacity: 0;
+}
+.hidden2{
+    position: absolute;
+    background-image: url(./multimedia/HomeTwo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: -100%;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    overflow: hidden;
+    transition: ease 1s;
+    opacity: 0;
+}
+
+.pedestal{
+    width: 8.5%;
+    right: 20%;
+    top: 30%;
+}
+.item{
+    width: 5%;
+    right: 21.6%;
+    top: 24%;
+    cursor: pointer;
+}
+.itemMove{
+    animation: infinite 1.5s itemMove ease;
+}
+
+@keyframes itemMove{
+    50%{
+        transform: translateY(1vh);
+    }
+}
+
+#monedas{
+    width: 5%;
+}
+.cursorM{
+    cursor: pointer;
+}
+.monedaOne{
+    top: 20%;
+    left: 30%;
+}
+.monedaTwo{
+    top: 50%;
+    left: 12%;
+}
+.monedaThree{
+    top: 75%;
+    right: 20%;
+}
+.monedaFour{
+    top: 70%;
+    right: 20%;
+}
+.monedaFive{
+    top: 65%;
+    right: 30%;
+}
+.monedaSix{
+    top: 20%;
+    right: 15%;
+}
+.monedaSeven{
+    top: 72%;
+    left: 25%;
+}
+.monedaEigth{
+    top: 20%;
+    left: 20%;
+}
+.monedaNine{
+    top: 30%;
+    left: 30%;
+}
+.monedaTeen{
+    top: 60%;
+    left: 40%;
+}
+.monedasData{
+    display: flex;
+    color: white;
+    width: 100%;
+    gap: 1vh;
+    height: 3vh;
+    justify-content: start;
+    align-items: center;
+    font-size: 2vh;
+    font-family: 'Courier New', Courier, monospace;
+    left: 10%;
+}
+.isaacData{
+    width: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 45%;
+}
+.isaacData2{
+    width: 10%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 25%;
+    left: 45%;
+}
+.isaac{
+    width: 100%;
+}
+.corazon{
+    width: 50%;
+    transition: ease .5s;
+}
+.corazonMove1{
+    animation: CRM1 infinite ease 1s;
+}
+
+@keyframes CRM1{
+    50%{
+        transform: scale(110%);
+    }
+}
+.corazonMove2{
+    animation: CRM2 infinite ease .5s;
+}
+.corazonMuerto{
+    scale: 0;
+    transition: ease .5s;
+}
+
+@keyframes CRM2{
+    50%{
+        transform: scale(118%);
+    }
+}
+
+.veinteVeinte{
+    width: 50%;
+}
+.itemData{
+    top: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    scale: 0;
+}
+
+.itemDataAnimation{
+    animation: forwards 3s ease-in itemDT;
+    scale: 100%;
+}
+.monedaGrab{
+    animation: forwards .5s ease-out monedaGR;
+}
+
+@keyframes itemDT{
+    0%{
+        transform: translateX(-100%) scale(10%);
+        opacity: 0;
+    }
+    5%{
+        transform: translateX(0) scale(100%);
+        opacity: 1;
+    }
+    95%{
+        transform: translateX(0) scale(100%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(100%) scale(10%);
+        opacity: 0;
+    }
+}
+
+@keyframes monedaGR{
+    25%{
+        transform: rotate(-10deg) translateY(-1vh);
+    }
+    50%{
+        transform: rotate(0deg) translateY(-1vh);
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.itemGrab{
+    animation: forwards 3s itemGR ease-in;
+}
+
+@keyframes itemGR {
+    5%{
+        transform: scale(500%) translateX(-100%);
+        top: 60%;
+    }
+    25%{
+        transform: scale(530%) translateX(-95%);
+        top: 60%;
+    }
+    50%{
+        transform: scale(500%) translateX(-100%);
+        top: 60%;
+    }
+    75%{
+        transform: scale(530%) translateX(-95%);
+        top: 60%;
+    }
+    90%{
+        transform: scale(500%) translateX(-100%);
+        top: 60%;
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0) translateX(-100%);
+        top: 60%;
+        opacity: 0;
+    }
+}
+
+.puerta{
+    position: absolute;
+    width: 8%;
+    height: 10vh;
+    bottom: 0;
+    left: 46%;
+    cursor: pointer;
+}
+.contadorCL{
+    animation: forwards .5s ease-in-out MonedaClick;
+}
+
+@keyframes MonedaClick{
+    50%{
+        transform: translateY(1vh);
+        color: yellow;
+    }
+}
+
+.isaacMove1{
+    animation: ease 6s isaacItem;
+}
+
+@keyframes isaacItem {
+    20%{
+        transform: translateY(-180%) translateX(155%);
+    }
+    70%{
+        transform: translateY(-180%) translateX(155%);
+    }
+}
+
+.enemigo{
+    width: 12%;
+    bottom: 18%;
+    left: 12%;
+}
+.enemigo2{
+    width: 12%;
+    bottom: 18%;
+    left: 12%;
+}
+.ENdisable{
+    display: none;
+}
+.cursorEN{
+    cursor: pointer;
+}
+.puerta2{
+    position: absolute;
+    width: 8%;
+    height: 10vh;
+    top: 0;
+    left: 46%;
+    cursor: pointer;
+}
+.isaac2{
+    width: 100%;
+}
+.corazon2{
+    width: 50%;
+    transition: ease .5s;
+}
+.isaacPincho1{
+    animation: 4s ease P1;
+}
+.isaacPincho2{
+    animation: 4s ease P2 forwards;
+}
+
+@keyframes P1{
+    50%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+    }
+    51%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 0;
+    }
+    52%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+    }
+    53%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 0;
+    }
+    54%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+    }
+}
+@keyframes P2{
+    50%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+    }
+    51%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 0;
+    }
+    52%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+    }
+    53%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 0;
+    }
+    54%{
+        transform: translateY(150%) translateX(-250%);
+        opacity: 1;
+        scale: 100%;
+    }
+    100%{
+        transform: translateY(-120%) translateX(-500%);
+        opacity: 0;
+        scale: 0;
+    }
+}
+
+.chao{
+    display: none;
+}
+
+.escenario3{
+    position: absolute;
+    background-image: url(./multimedia/CasaPodrida.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    overflow: hidden;
+    transition: ease 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 10s infinite sombraH3 ease-in-out;
+}
+.hidden3{
+    position: absolute;
+    background-image: url(./multimedia/CasaPodrida.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 65vh;
+    box-shadow: inset 0 0 5vh 8vh black;
+    overflow: hidden;
+    transition: ease 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 10s infinite sombraH3 ease-in-out;
+    top: -100%;
+    opacity: 0;
+    transition: ease 1s;
+}
+.isaacM{
+    width: 10%;
+    animation: 10s infinite sombraIsaac ease-in-out;
+}
+.cursorIM{
+    cursor: pointer;
+}
+
+@keyframes sombraH3{
+    30%{
+        box-shadow: inset 0 0 5vh 8vh black;
+    }
+    50%{
+        box-shadow: inset 0 0 15vh 15vh black;
+    }
+    70%{
+        box-shadow: inset 0 0 5vh 8vh black;
+    }
+}
+@keyframes sombraIsaac{
+    30%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+    }
+    70%{
+        opacity: 1;
+    }
+}
+
+.hablar{
+    position: absolute;
+    color: rgba(136, 118, 94, 0.504);
+    font-family: 'Courier New', Courier, monospace;
+    transition: .5s ease;
+    top: 32%;
+}
+.hablarHidden{
+    opacity: 0;
+    transition: .5s ease;
+    scale: 0;
+}
+
+.escot1, .escot2{
+    position: absolute;
+}
+.escot1{ 
+    width: 18%;
+    top: 15%;
+    left: 10%;
+}
+.clickScot{
+    cursor: pointer;
+}
+.escot2{ 
+    width: 18%;
+    top: -4.5%;
+    left: 10%;
+    cursor: pointer;
+}
+.hiddenScot{
+    display: none;
+}
+.recoge{
+    opacity: .5;
+    position: absolute;
+    right: 20%;
+}
+.recoge2{
+    opacity: .5;
+    position: absolute;
+    right: 20%;
+}
+
+.isaacSeVa{
+    animation: forwards 3s chao ease;
+}
+
+@keyframes chao {
+    70%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-220%) translateX(-305%);
+    }
+}
+.escenario11{
+    animation: forwards 6s borroso ease;
+}
+
+@keyframes borroso {
+    100%{
+        filter: blur(1vh);
+    }
+}
+.hiddenFinal{
+    scale: 150%;
+    opacity: 0;
+    transition: ease 1s;
+}
+
+.gano{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    transition: ease 1s;
+}
+.gano2{
+    scale: 0;
+    transition: ease 1s;
+}
+.gano h1{
+    font-size: 7vh;
+    animation: infinite ease-in-out textoGano 3s;
+}
+.repetir{
+    background-color: rgb(255, 255, 255);
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    color: black;
+    cursor: pointer;
+    transition: ease .3s;
+}
+.repetir:hover{
+    background-color: rgb(189, 187, 187);
+    transition: ease .3s;
+}
+
+@keyframes textoGano {
+    50%{
+        scale: 110%;
+    }
+}
+
+.bola{
+    width: 4%;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    cursor: pointer;
+    animation: bola infinite ease-in 3s;
+    opacity: .8;
+}
+.hojaSuelo{
+    width: 5%;
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    cursor: pointer;
+    transform: rotate(5deg);
+    animation: game infinite ease 2s;
+}
+@keyframes bola {
+    5%{
+        transform: rotate(0);
+    }
+    10%{
+        transform: rotate(5deg);
+    }
+    15%{
+        transform: rotate(-5deg);
+    }
+    20%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(0);
+    }
+    55%{
+        transform: rotate(5deg);
+    }
+    60%{
+        transform: rotate(-5deg);
+    }
+    65%{
+        transform: rotate(0);
+    }
+    85%{
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(-2vh);
+    }
+    100%{
+        transform: translateY(0vh);
+    }
+}
+@keyframes game {
+    50%{
+        opacity: .7;
+    }
+}
+
+.otroJuego{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    gap: 5vh;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./multimedia/Papel.png);
+    width: 20%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom 45%;
+    transition: ease .5s;
+    font-family: 'Courier New', Courier, monospace;
+    rotate: 5deg;
+    scale: 15%;
+    transform: translateX(450%);
+    transition: ease 1.3s;
+}
+.aparece{
+    animation: ease 1s aparece forwards;
+}
+@keyframes aparece{
+    35%{
+        transform: translateX(0);
+    }
+    100%{
+       transform: translateX(0);
+       scale: 100%;
+    }
+}
+.hiddenhoja{
+    display: none;
+}
+
+.monedaFeliz{
+    width: 40%;
+}
+.equis{
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    cursor: pointer;
+}
+.seguir{
+    position: absolute;
+    right: 15%;
+    bottom: 15%;
+    cursor: pointer;
+}
+.monedaText{
+    width: 80%;
+    text-align: center;
+}
+.borroso{
+    filter: blur(1.5vh) grayscale(50%);
+}
+.jugar{
+    color: black;
+    text-decoration: none;
+}
+.noP{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hiddenP{
+    display: none;
+}
