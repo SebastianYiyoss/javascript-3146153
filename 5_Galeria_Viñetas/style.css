@@ -6,12 +6,14 @@
 .pantalla{
     position: relative;
     width: 750px;
-    height:500px;
+    height:520px;
     margin: auto;
 }
 
 .pantalla .fondo{
     width: 100%;
+    border-radius: 5vh;
+    height: max-content;
 }
 
 .bloque1{
@@ -135,6 +137,7 @@
 .escenas {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: max-content;
 }
 
 .escena {
@@ -143,6 +146,7 @@
 }
 
 .escena.activa {
+   height: max-content;
   display: block;
 }
 
@@ -190,3 +194,25 @@
   border: 3px solid #FFD700;
 }
 
+.botones{
+  position: absolute;
+  display: flex;
+  gap: 3vh;
+  top: 5%;
+  left: 5%;
+}
+.botones h1{
+  background-color: rgb(255, 255, 255);
+  border-radius: 1vh;
+  padding: 1vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3vh;
+  cursor: pointer;
+  border: solid .3vh;
+  transition: ease .3s;
+}
+.botones h1:hover{
+  background-color: rgb(196, 194, 194);
+  transition: ease .3s;
+  scale: 105%;
+}
