@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+}
+.fondo{
+    background: url(./assets/fondoTodo.png);
+    width: 100%;
+    height: 100vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+.todo{
+    position: relative;
+    top: -100vh;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(58, 58, 58, 0.322);
+    padding: 1vh 0 1vh 0;
+    justify-content: space-between;
+}
+header img{
+    margin-left: 2vh;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 1vh;
+}
+.menu{
+    margin-right: 2vh;
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: sans-serif;
+}
+.inicio{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 1vh;
+    padding: 1vh;
+    transition: ease .5s;
+}
+.inicio:hover{
+    background-color: rgb(255, 255, 255);
+    transition: ease .5s;
+}
+.openEyes{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    background-color: rgba(0, 0, 0, 0.634);
+    border-radius: 1vh;
+    padding: 1vh;
+    transition: ease .5s;
+}
+.openEyes:hover{
+    background-color: rgb(0, 0, 0);
+    transition: ease .5s;
+}
+.menu p{
+    font-size: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 1vh;
+    padding: 1vh;
+    cursor: pointer;
+    transition: ease .5s;
+}
+.menu p:hover{
+    background-color: rgb(255, 255, 255);
+    transition: ease .5s;
+}
+
+.infoComic{
+    background-color: rgba(0, 0, 0, 0.607);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.infoComic img{
+    width: 25%;
+}
+.descrip{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 5vh;
+}
+.descrip h1{
+    color: white;
+}
+.descrip p{
+    color: rgb(177, 175, 175);
+    line-height: 4vh;
+}
+
+.caps{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgba(58, 58, 58, 0.559);
+    height: 21vh;
+}
+.eps{
+    width: 12%;
+    border-radius: 1vh;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 2vh;
+    font-size: 1.8vh;
+    text-align: center;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: ease .5s;
+    border: solid .1vh;
+}
+.ep1{
+    background: url(./assets/postOne.png);
+    color: white;
+}
+.eps:hover{
+    filter: none;
+    transform: rotate(2deg) scale(108%);
+    transition: ease .5s;
+}
+.ep2{
+    background: url(./assets/postTwo.png);
+    background-position: top;
+    color: rgb(157, 3, 3);
+}
+.ep3{
+    background: url(./assets/postThree.png);
+    background-position: left bottom;
+    color: rgb(0, 0, 0);
+}
+.ep4{
+    background: url(./assets/postFour.png);
+    background-position: center top;
+    color: rgb(63, 72, 83);
+}
+.ep5{
+    background: url(./assets/postfive.png);
+    color: white;
+}
+
+.capsTwo{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgba(58, 58, 58, 0.559);
+    height: 30vh;
+}
+.capitulosTwo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+    transition: ease.5s;
+}
+.capitulosTwo:hover{
+    scale: 108%;
+    transition: ease.5s;
+}
+.capitulosTwo img{
+    width: 50%;
+    border-radius: 1vh;
+    border: solid;
+}
+.capitulosTwo h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2.5vh;
+}
+
+@media screen and (max-width:750px) {
+    .menu{
+        width: 70%;
+    }
+    .descrip{
+        width: 50%;
+    }
+    .infoComic img{
+        width: 40%;
+    }
+    .eps{
+        font-size: 1.3vh;
+        width: 15%;
+        height: 12vh;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .fondo{
+        height: 169vh;
+        background-position: bottom;
+    }
+    .todo{
+        top: -169vh;
+    }
+    .menu{
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .menu p{
+        width: 80%;
+        text-align: center;
+    }
+    .inicio{
+        width: 80%;
+        text-align: center;
+    }
+    .openEyes{
+        width: 80%;
+        text-align: center;
+    }
+    header{
+        height: 35vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        width: 20%;
+        margin-left: 0;
+    }
+    .infoComic{
+        flex-direction: column;
+        height: 70vh;
+        padding-top: 2vh;
+    }
+    .infoComic img{
+        width: 30%;
+        padding-top: 2vh;
+    }
+    .descrip{
+        width: 80%;
+        text-align: center;
+        font-size: 2vh;
+    }
+    .caps{
+        height: 60vh;
+        flex-direction: column;
+    }
+    .eps{
+        width: 70%;
+        height: 10vh;
+        gap: 2vh;
+    }
+}
