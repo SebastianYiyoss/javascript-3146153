@@ -13,6 +13,18 @@ body{
     background-size: cover;
     background-position: center;
 }
+.fondoTwo{
+    background: url(./assets/fondoTodo.png);
+    width: 100%;
+    height: 109vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+.todoTwo{
+    position: relative;
+    top: -109vh;
+}
 .todo{
     position: relative;
     top: -100vh;
@@ -189,6 +201,16 @@ header img{
     font-size: 2.5vh;
 }
 
+.linkOne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    text-decoration: none;
+    color: black;
+}
+
 @media screen and (max-width:750px) {
     .menu{
         width: 70%;
@@ -210,6 +232,13 @@ header img{
     .fondo{
         height: 169vh;
         background-position: bottom;
+    }
+    .fondoTwo{
+        height: 209vh;
+        background-position: bottom;   
+    }
+    .todoTwo{
+        top: -209vh;
     }
     .todo{
         top: -169vh;
@@ -245,7 +274,7 @@ header img{
         padding-top: 2vh;
     }
     .infoComic img{
-        width: 30%;
+        width: 50%;
         padding-top: 2vh;
     }
     .descrip{
@@ -256,6 +285,20 @@ header img{
     .caps{
         height: 60vh;
         flex-direction: column;
+    }
+    .capsTwo{
+        flex-direction: column;
+        height: 100vh;
+        color: white;
+    }
+    .capsTwo h2{
+        position: absolute;
+    }
+    .capsTwo img{
+        width: 70%;
+        height: 10vh;
+        object-fit: cover;
+        opacity: .6;
     }
     .eps{
         width: 70%;

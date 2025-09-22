@@ -13,8 +13,10 @@ comic.capitulos.forEach(capitulo => {
     const div = document.createElement('div')
     div.classList.add('capitulosTwo')
     div.innerHTML = `
-    <img src="${capitulo.imgPortada}" alt="">
-    <h2>${capitulo.nombreCap}</h2>`
+    <a href="./indexLink/index.html?id=${capitulo.id}" class="linkOne">
+        <img src="${capitulo.imgPortada}" alt="">
+        <h2>${capitulo.nombreCap}</h2>
+    </a>`
 
     capitulos.appendChild(div)
 });

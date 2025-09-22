@@ -6,6 +6,7 @@ const comic = {
 
     "capitulos": [
         {
+            id: 1,
             "nombreCap": "Reclutados",
             "imgPortada": "./assets/postOne.png",
             "preVista": "./multimedia/vistaOne.mp4",
@@ -13,6 +14,7 @@ const comic = {
             "personajes": ["Kyle", "Maggie", "Alim", "Larry", "Carly", "Jimbo"]
         },
         {
+            id: 2,
             "nombreCap": "Atrapados",
             "imgPortada": "./assets/postTwo.png",
             "preVista": "./multimedia/vistaTwo.mp4",
@@ -20,6 +22,7 @@ const comic = {
             "personajes": ["Kyle", "Maggie", "Alim", "Jimbo"]
         },
         {
+            id: 3,
             "nombreCap": "Un Nuevo Mundo",
             "imgPortada": "./assets/postThree.png",
             "preVista": "./multimedia/vistaThree.mp4",
@@ -27,6 +30,7 @@ const comic = {
             "personajes": ["Kyle", "Maggie", "Alim", "Jimbo"]
         },
         {
+            id: 4,
             "nombreCap": "Una Falsa Seguridad",
             "imgPortada": "./assets/postFour.png",
             "preVista": "./multimedia/vistaFour.mp4",
@@ -34,6 +38,7 @@ const comic = {
             "personajes": ["Kyle", "Maggie", "Alim"]
         },
         {
+            id: 5,
             "nombreCap": "El Fin Del Ser",
             "imgPortada": "./assets/postfive.png",
             "preVista": "./multimedia/vistaFive.mp4",
