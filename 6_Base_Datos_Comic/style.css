@@ -84,7 +84,21 @@ header img{
     cursor: pointer;
     transition: ease .5s;
 }
+.cap{
+    text-decoration: none;
+    color: black;
+    font-size: 2.5vh;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 1vh;
+    padding: 1vh;
+    cursor: pointer;
+    transition: ease .5s;
+}
 .menu p:hover{
+    background-color: rgb(255, 255, 255);
+    transition: ease .5s;
+}
+.cap:hover{
     background-color: rgb(255, 255, 255);
     transition: ease .5s;
 }
@@ -173,32 +187,38 @@ header img{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-evenly;
     background-color: rgba(58, 58, 58, 0.559);
     height: 30vh;
 }
 .capitulosTwo{
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2vh;
+    opacity: .8;
     transition: ease.5s;
 }
 .capitulosTwo:hover{
+    opacity: 1;
     scale: 108%;
     transition: ease.5s;
 }
+.capitulosTwo:hover h2{
+    color: rgb(4, 34, 0);
+    transition: ease.5s;
+}
 .capitulosTwo img{
-    width: 50%;
+    width: 70%;
     border-radius: 1vh;
-    border: solid;
+    border: solid .2vh black;
 }
 .capitulosTwo h2{
     text-align: center;
     font-family: sans-serif;
     font-size: 2.5vh;
+    transition: ease.5s;
 }
 
 .linkOne{
@@ -251,6 +271,10 @@ header img{
         width: 80%;
         text-align: center;
     }
+    .cap{
+        width: 80%;
+        text-align: center;
+    }
     .inicio{
         width: 80%;
         text-align: center;
@@ -284,18 +308,28 @@ header img{
     }
     .caps{
         height: 60vh;
+        width: 100%;
         flex-direction: column;
     }
     .capsTwo{
         flex-direction: column;
         height: 100vh;
         color: white;
+        width: 100%;
+        justify-content: space-evenly;
     }
     .capsTwo h2{
         position: absolute;
     }
-    .capsTwo img{
-        width: 70%;
+    .capitulosTwo{
+        width: 90%;
+        height: 10vh;
+    }
+    .capitulosTwo a{
+        width: 100%;
+    }
+    .capitulosTwo img{
+        width: 100%;
         height: 10vh;
         object-fit: cover;
         opacity: .6;

@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.cuerpo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/muroGris.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/muroGris.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cabeza{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.798);
+    margin-bottom: 2vh;
+}
+header{
+    width: 95%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.openEyes{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5vh;
+    background-color: rgba(0, 0, 0, 0.634);
+    border-radius: 1vh;
+    padding: .8vh;
+    transition: ease .5s;
+    font-family: sans-serif;
+    border: solid .2vh;
+}
+.openEyes:hover{
+    background-color: rgb(0, 0, 0);
+    transition: ease .5s;
+    border: solid white .2vh;
+}
+.atras{
+    font-size: 3vh;
+    width: 4vh;
+    background-color: rgba(255, 255, 255, 0.634);
+    border-radius: 5vh;
+    padding: .2vh;
+    cursor: pointer;
+    transition: ease .5s;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.atras:hover{
+    background-color: rgb(255, 255, 255);
+    transition: ease .5s;
+}
+
+.infoCap{
+    width: 80%;
+    height: 55vh;
+    border-radius: 0 2vh 2vh 0;
+    background-image: url(../assets/fondoC1.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: center;
+    box-shadow: 0 0 5vh black;
+    transition: ease 1s;
+}
+.infoCap:hover{
+    background-size: 110%;
+    background-position-x: right;
+    transition: ease 1s;
+    width: 90%;
+}
+.infoCap:hover .square{
+    width: 44%;
+    transition: ease 1s;
+}
+.square{
+    height: 55vh;
+    width: 50%;
+    overflow: hidden;
+    transition: ease 1s;
+}
+.blackSquare{
+    height: 55vh;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.724);
+    box-shadow: 0 0 5vh 5vh rgba(0, 0, 0, 0.724);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    gap: 2vh;
+
+}
+.blackSquare h1{
+    font-size: 5vh;
+}
+.blackSquare p{
+    width: 50%;
+    line-height: 3vh;
+    color: rgb(185, 185, 185);
+}
+.blackSquare a{
+    width: 50%;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: .5vh 0 .5vh 0;
+    border-radius: 1vh;
+    margin-top: 3vh;
+    transition: ease .5s;
+}
+.blackSquare a:hover{
+    background-color: gray;
+    transition: ease .5s;
+    scale: 105%;
+}
+.barra{
+    width: 50%;
+    height: .5vh;
+    background-color: rgb(0, 0, 0);
+}
+.barra div{
+    width: 40%;
+    height: .5vh;
+    background-color: white;
+}
+
+.restCaps{
+    width: 100%;
+    height: 32vh;
+    display: flex;
+    justify-content: end;
+}
+.divCaps{
+    width: 70%;
+    height: 32vh;
+    background-color: rgba(56, 56, 56, 0.644);
+    margin-top: 2vh;
+    border-radius: 2vh 0 0 2vh;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.418);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ease 1s;
+}
+.divCaps:hover{
+    transition: ease 1s;
+    width: 80%;
+}
+.cap{
+    width: 15%;
+    height: 28vh;
+    display: flex;
+    align-items: end;
+    border-radius: 1vh;
+    box-shadow: 0 0 2vh black;
+    overflow: hidden;
+    opacity: .7;
+    transition: ease.6s;
+}
+.cap:hover{
+    transition: ease.6s;
+    opacity: 1;
+    scale: 105%;
+}
+.cap div{
+    width: 100%;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.789);
+    box-shadow: 0 0 2vh 2vh rgba(0, 0, 0, 0.789);
+}
+.oneCap{
+    background-image: url(../assets/fondoC1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid green;
+}
+.twoCap{
+    background-image: url(../assets/postTwo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.threeCap{
+    background-image: url(../assets/postThree.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fourCap{
+    background-image: url(../assets/postFour.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fiveCap{
+    background-image: url(../assets/postfive.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divCaps2{
+    width: 70%;
+    height: 32vh;
+    background-color: rgba(56, 56, 56, 0.644);
+    margin-top: 2vh;
+    border-radius: 2vh 0 0 2vh;
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.418);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: ease 1s;
+}
+.divCaps2:hover{
+    width: 80%;
+}
+.cap2{
+    width: 20vh;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1vh;
+    box-shadow: 0 0 2vh black;
+    opacity: .7;
+    text-align: center;
+    transition: ease.6s;
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 2vh;
+    overflow: hidden;
+}
+.cap2:hover{
+    scale: 105%;
+}
+.imagenCap{
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+}
+.cap2 h3{
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        height: 240vh;
+    }
+    .infoCap{
+        width: 100%;
+        display: flex;
+        border-radius: 0;
+        height: 30vh;
+        background-size: cover;
+        transition: ease 1s;
+    }
+    .infoCap:hover{
+        background-size: 120%;
+        background-position-x: center;
+        transition: ease 1s;
+        width: 100%;
+    }
+    .infoCap:hover .square{
+        transition: ease 1s;
+        width: 100%;
+    }
+    .square{
+        width: 100%;
+        height: 40vh;
+        position: relative;
+        top: 30vh;
+    }
+    .blackSquare{
+        width: 100%;
+        height: 40vh;
+    }
+    .blackSquare p{
+        width: 90%;
+    }
+    .restCaps{
+        position: relative;
+        top: 54vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .divCaps{
+        border-radius: 2vh;
+        width: 90%;
+        height: 50vh;
+        flex-direction: column;
+        gap: 2vh;
+        padding: 3vh 0 3vh 0;
+    }
+    .divCaps2{
+        border-radius: 2vh;
+        width: 95%;
+        height: 140vh;
+        flex-direction: column;
+        position: relative;
+        top: 48vh;
+        gap: 2vh;
+        padding: 3vh 0 3vh 0;
+    }
+    .divCaps2 div{
+        width: 90%;
+        display: flex;
+        height: 20vh;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cap2{
+        width: 90%;
+    }
+    .cap{
+        width: 90%;
+        height: 10vh;
+    }
+    .cap div{
+        font-size: 2vh;
+        justify-content: center;
+    }
+    .divCaps:hover{
+        width: 90%;
+    }
+    .divCaps2:hover{
+        width: 95%;
+    }
+    .cap2 img{
+        width: 100%;
+        height: 13vh;
+    }
+}
