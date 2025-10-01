@@ -1,3 +1,4 @@
+/* llamar la sección que contiene la informaión e imagen del comic e insertar su contenido (titulo, descripción e imagen) */
 const infoComic = document.querySelector('#infoComic')
 infoComic.innerHTML = `
 <div class="descrip" id="info"></div>
@@ -8,6 +9,7 @@ infoTexts.innerHTML = `
 <h1>${comic.nombreComic}</h1>
 <p>${comic.descripcion}</p>`
 
+/* crear una sección link por cada capìtulio en la base datos, que conduzca a su respectivo item */
 const capitulos = document.querySelector('#caps')
 comic.capitulos.forEach(capitulo => {
     const div = document.createElement('div')
@@ -21,6 +23,7 @@ comic.capitulos.forEach(capitulo => {
     capitulos.appendChild(div)
 });
 
+/* intercalar la imagen principal de la seccion de información del comic */
 let arte = document.querySelector('#art')
 setInterval(() => {
     arte.setAttribute('src', './assets/miniArt2.png')
